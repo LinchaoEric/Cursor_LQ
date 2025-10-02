@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "description": "Meta (Facebook) Interview Preparation Guide - Technical and Behavioral Questions",
+    "sections": [
+      "Technical Skills & Coding",
+      "Analytics & Data Science",
+      "System Design & Architecture",
+      "Behavioral & Leadership",
+      "Product & Business Sense"
+    ]
+  },
+  "knowledge_points": [
+    "Data Structures & Algorithms - Master common patterns and time/space complexity",
+    "System Design - Understand scalability, distributed systems, and trade-offs",
+    "SQL & Data Analysis - Be proficient with complex queries and data manipulation",
+    "Machine Learning - Know ML fundamentals, model evaluation, and practical applications",
+    "Product Metrics - Understand KPIs, A/B testing, and data-driven decision making",
+    "Behavioral Questions - Use STAR method and have concrete examples ready"
+  ],
+  "sample_questions": [
+    "How would you design a system to handle millions of users?",
+    "Write a SQL query to find the top 10 customers by revenue",
+    "How would you evaluate the success of a new feature launch?",
+    "Describe a time when you had to make a decision with incomplete data",
+    "How would you optimize a recommendation algorithm?",
+    "What metrics would you track for a social media platform?"
+  ],
+  "answers": [
+    "System Design: Start with requirements, estimate scale, design components, discuss trade-offs",
+    "SQL: Use window functions, CTEs, and proper indexing for performance",
+    "Metrics: Define success criteria, choose relevant KPIs, establish baseline, monitor trends",
+    "Behavioral: Situation, Task, Action, Result (STAR) format with specific examples",
+    "ML: Understand bias-variance tradeoff, cross-validation, and business impact",
+    "Scalability: Horizontal vs vertical scaling, caching strategies, load balancing"
+  ],
+  "interview_tips": [
+    "Practice coding on a whiteboard or paper",
+    "Think out loud and explain your reasoning",
+    "Ask clarifying questions before starting",
+    "Consider edge cases and error handling",
+    "Discuss trade-offs and alternatives",
+    "Show enthusiasm and genuine interest"
+  ]
+}
