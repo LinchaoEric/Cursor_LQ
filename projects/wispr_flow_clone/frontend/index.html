@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wispr Flow Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <h1>Wispr Flow Clone</h1>
+        <p class="tagline">Bilingual voice capture with near real-time transcription.</p>
+      </header>
+
+      <section class="controls">
+        <label class="language-select">
+          <span>Language hint</span>
+          <select id="language">
+            <option value="auto" selected>Auto detect (English / 中文)</option>
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+          </select>
+        </label>
+
+        <div class="buttons">
+          <button id="startBtn">Start Recording</button>
+          <button id="stopBtn" disabled>Stop Recording</button>
+        </div>
+
+        <div class="status" id="status">Idle</div>
+      </section>
+
+      <section class="transcript-panel">
+        <h2>Live Transcript</h2>
+        <div id="transcriptLog" class="transcript-log"></div>
+      </section>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
