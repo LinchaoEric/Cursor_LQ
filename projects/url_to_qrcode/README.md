@@ -52,8 +52,24 @@ url_to_qrcode/
 - Safari
 - Edge
 
+## 工作原理
+
+工具使用双重备用方案：
+1. **优先使用本地库**：使用项目中的 `qrcode.min.js` 文件（无需网络）
+2. **备用在线API**：如果本地库不可用，自动使用在线QR码生成API
+
 ## 注意事项
 
-- 需要网络连接（使用CDN加载qrcode.js库）
-- 如果需要在离线环境使用，可以下载qrcode.js库到本地
+- **离线使用**：如果本地 `qrcode.min.js` 文件存在且可用，可以完全离线使用
+- **在线备用**：如果本地库不可用，需要网络连接使用在线API
+- **推荐方案**：为了最佳体验，建议下载真正的 `qrcode.js` 库文件替换当前的简化版本
+
+## 如何下载真正的QRCode.js库
+
+如果当前版本无法正常工作，可以手动下载：
+
+1. 访问：https://github.com/davidshimjs/qrcodejs
+2. 点击 "Code" → "Download ZIP"
+3. 解压后找到 `qrcode.min.js` 文件
+4. 替换项目中的 `qrcode.min.js` 文件
 

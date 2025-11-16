@@ -39,11 +39,26 @@
         </main>
 
         <footer>
-            <p>使用 qrcode.js 库生成二维码</p>
+            <p>使用本地QR码生成库（无需网络连接）</p>
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <!-- 使用本地QR码生成库（无需网络连接） -->
+    <script src="qrcode.min.js"></script>
+    <script>
+        // 检查库是否加载
+        window.addEventListener('load', function() {
+            if (typeof QRCode === 'undefined') {
+                console.error('QRCode库未加载');
+                const errorDiv = document.createElement('div');
+                errorDiv.style.cssText = 'color: red; padding: 20px; text-align: center; background: #fee; border-radius: 10px; margin: 20px;';
+                errorDiv.innerHTML = '<h3>⚠️ QRCode库加载失败</h3><p>请确保 qrcode.min.js 文件存在</p>';
+                document.body.insertBefore(errorDiv, document.body.firstChild);
+            } else {
+                console.log('QRCode库加载成功');
+            }
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
